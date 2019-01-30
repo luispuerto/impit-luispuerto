@@ -1,0 +1,30 @@
+# main links
+main:
+  # - title: "IMPIT"
+  #   url: /
+  - title: "Home"
+    url: https://luispuerto.net  
+  - title: "About Me"
+    url: https://luispuerto.net/aboutme/
+  - title: "Résumé"
+    url: https://luispuerto.net/resume/
+  - title: "Blog"
+    url: https://luispuerto.net/blog/
+  - title: "Archive"
+    url: https://luispuerto.net/archive/
+  - title: "Contact"
+    url: https://luispuerto.net/contact/
+IMPIT: 
+  - title: IMPIT Application
+    url: /
+    children: 
+      - title: ":movie_camera: Video"
+        url: /
+      - title: ":page_facing_up: Motivation Letter"
+        url: /motivation-letter/
+      - title: ":clipboard: Documentation"
+        url: /documentation/ 
+      - title: ":man_technologist:​ Computation Background"
+        url: /computation-background/
+      - title: ":us: English Skills"
+        url: /english-skills/
