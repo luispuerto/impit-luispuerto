@@ -55,9 +55,9 @@
   align-self: center;
   font-weight: bold;
   z-index: 20;
-  font-size: .85em;
+  font-size: .75em;
 
-  @include breakpoint($small) {
+  @include breakpoint(375px) {
     font-size: 1em;
   }
 }
