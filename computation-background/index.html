@@ -1,0 +1,899 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Computation Background | Luis Puerto’s IMPIT Application</title>
+<meta name="description" content="            Forestry      Research       GIS      Remote Sensing      ">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Luis Puerto's IMPIT Application">
+<meta property="og:title" content="Computation Background">
+<meta property="og:url" content="https://impit.luispuerto.net/computation-background/">
+
+
+
+
+  <meta property="og:image" content="https://impit.luispuerto.net/assets/images/pages/impit/computation-background.jpeg">
+
+
+
+  <meta name="twitter:site" content="@lpuerto">
+  <meta name="twitter:title" content="Computation Background">
+  <meta name="twitter:description" content="            Forestry      Research       GIS      Remote Sensing      ">
+  <meta name="twitter:url" content="https://impit.luispuerto.net/computation-background/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://impit.luispuerto.net/assets/images/pages/impit/computation-background.jpeg">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://impit.luispuerto.net/computation-background/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://impit.luispuerto.net",
+      "logo": "https://impit.luispuerto.net/assets/images/pages/header-splash.jpg"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luis Puerto",
+      "url": "https://impit.luispuerto.net",
+      "sameAs": ["https://twitter.com/lpuerto","https://www.linkedin.com/in/lpuerto","https://github.com/luispuerto","https://www.flickr.com/photos/lpuerto"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://luisspuerto.net/feed.xml" type="application/atom+xml" rel="alternate" title="Luis Puerto's IMPIT Application Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Luis Puerto's IMPIT Application</a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net">Home</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net/aboutme/">About Me</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net/resume/">Résumé</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net/blog/">Blog</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net/archive/">Archive</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://luispuerto.net/contact/">Contact</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+            url('/assets/images/pages/impit/computation-background.jpeg');
+          ">
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Computation Background
+
+        
+      </h1>
+      
+      <!-- 
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  9 minute read
+</p>
+       -->
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Source: <a href="https://www.pexels.com/photo/photo-of-person-typing-on-computer-keyboard-735911/">Pexels</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/"><span class="nav__sub-title">IMPIT Application</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/" class=""><img class="emoji" title=":movie_camera:" alt=":movie_camera:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3a5.png" height="20" width="20"> Video</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/motivation-letter/" class=""><img class="emoji" title=":page_facing_up:" alt=":page_facing_up:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4c4.png" height="20" width="20"> Motivation Letter</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/documentation/" class=""><img class="emoji" title=":clipboard:" alt=":clipboard:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cb.png" height="20" width="20"> Documentation</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/computation-background/" class="active"><img class="emoji" title=":man_technologist:" alt=":man_technologist:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f468-1f4bb.png" height="20" width="20">​ Computation Background</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/english-skills/" class=""><img class="emoji" title=":us:" alt=":us:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20"> English Skills</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        
+        <a href="https://luispuerto.net/aboutme/">
+          <img src="/assets/images/pages/20121231-035-ol.jpg" alt="Luis Puerto" itemprop="image">
+        </a>
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <a href="https://luispuerto.net/aboutme/"><h3 class="author__name" itemprop="name">Luis Puerto</h3></a>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Born in Ponferrada, Spain. A Forest Engineer interested in Science and Technology. Fascinated about almost everything
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name"><img class="emoji" title=":eu:" alt=":eu:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1ea-1f1fa.png" height="20" width="20"><img class="emoji" title=":es:" alt=":es:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1ea-1f1f8.png" height="20" width="20"><img class="emoji" title=":sweden:" alt=":sweden:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1f8-1f1ea.png" height="20" width="20"><img class="emoji" title=":finland:" alt=":finland:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1eb-1f1ee.png" height="20" width="20"><img class="emoji" title=":us:" alt=":us:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20"></span>
+        </li>
+      
+
+      
+
+      
+
+      
+        
+          
+            <li><a href="https://luispuerto.net/aboutme/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-user-circle" aria-hidden="true"></i> About me</a></li>
+          
+        
+          
+            <li><a href="mailto:luis@luispuerto.net" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/lpuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/lpuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+          
+            <li><a href="https://github.com/luispuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/lpuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Computation Background">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      
+        <p class="page__meta page__reading_time">
+          
+        
+          <strong><i class="far fa-clock" aria-hidden="true"></i></strong> 
+
+
+
+
+  9 minute read
+
+        
+        </p>
+      
+
+        
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-desktop"></i> In this page</h4></header>
+              
+              <ul class="toc__menu back__top"><li><a href="#">Back to Top</a></li></ul>
+              
+              <ul class="toc__menu">
+  <li><a href="#ancient-history--story-time">Ancient History &amp; Story Time</a></li>
+  <li>
+<a href="#recent-history">Recent History</a>
+    <ul>
+      <li>
+<a href="#courses">Courses</a>
+        <ul>
+          <li><a href="#learn-to-program">Learn to program</a></li>
+          <li><a href="#esri-courses">ESRI Courses</a></li>
+        </ul>
+      </li>
+      <li><a href="#working-exprience-at-ciuden">Working exprience at CIUDEN</a></li>
+      <li><a href="#self-learner">Self-learner</a></li>
+    </ul>
+  </li>
+  <li><a href="#sample-of-work">Sample of work</a></li>
+  <li><a href="#future">Future</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <div class="post__content">
+          <p>This page is intended as an addendum of my computer science background and an explanation of why I am interested in computer science in a more informal manner. I hope you enjoy.</p>
+
+<h2 id="ancient-history--story-time">Ancient History &amp; Story Time</h2>
+
+<p>As I mentioned in the video, as a good engineer I have been always interested in machines and how they work. My mom always say that I’m form the <em>button generation</em>. I always wanted to to push buttons to see what they were for. Manuals were for dorks and cowards who never wanted to test things out, or at least manuals were reserved to that moments when you get stuck and you inevitably have to read it.</p>
+
+<p>I always wanted to be an engineer. My room’s walls were filled with technical posters about planes, the space shuttle, how this and that worked and of course maps. I’m always been really fond of maps and blue prints, and probably for that reason I felt in love with Geographic Information Systems because with maps comes the exploration, the discovery, the wondering and wandering.</p>
+
+<p>Returning to machines, computers —and all their derivatives— have been always a sort of mysterious artifacts for me and I always has felt inevitably attracted to them —a lot of buttons to touch perhaps. I remember the first time I saw a computer in real life and working. It was in primary school, when I was first or second grade, while I was at the secretary’s office for some reason I cannot remember. I was sitting by the secretary while they were working in the computer, passing grades to the system over an incredible ugly blue screen. <em>Son, you better stand still while we are working in the computer because it has to save the data in the hard drive and if we move it the hard drive needle it is going to break or harm the hard drive</em> —they told me. As time pass by, I had regular computer science classes in school and high school, and even my parents sent me to a computer private classes at some point, where I learned the magic of the MS-DOS, Windows 3.11 and the office software. My parents at some point were even able to afford to buy me a computer in the last years of high school —a Pentium II in a clonic case with MS Windows 98— which I used to improve my computer skills, install and uninstall the OS a lot of times to try things out, of course play games and even at some point to disassemble the computer because <em>I wanted to know what was going on in the processor</em> and I thought <em>the processor needed to have a walk</em>. That didn’t turn out well, the computer needed a profesional repair because, back then, I didn’t know that static electricity could be something <em>harmful</em> —live and learn. Anyway, that experience didn’t stop me from continue opening things up to know <em>what was going on</em> inside and exploring. During college I installed non-stop different <em>distros</em> of Linux —in my computer and in university ones— to test them out and I try to learn as much as I could about Geographic Information Systems, which at that time was the closes thing to <em>computer science</em> inside of Forestry Engineering.</p>
+
+<p>And you are probably wondering… why didn’t you study computer science in college? Well, I asked a similar question to a university profesor recently, <em>how did you end up in this job and in your field?</em> <em>Well</em> —they replied— <em>I ended up here just by chance. Probably if I had to choose again I wouldn’t end up in this field or even being a professor. Life took me here</em>. Sometimes, life is just like that, you end up in some place or some other because you make a left turn instead of right in one of the crossroads of your your life —literary or figuratively. Or just because decisions pile up in one side, but you wind up in other. In my case, it wasn’t that different, in Spain forestry is an engineering career path —Forest Engineering. We are even able to build forest houses up to two stories, build dams —small ones— and even to design wirings. Yes, I know it’s crazy! On the other hand, the forestry part in the name suggested that I would end up having a lot of fun and discovering a lot of places in the outdoors. I wasn’t wrong, I wound up here and now.</p>
+
+<h2 id="recent-history">Recent History</h2>
+
+<p>Now, I will explain a little bit more about my <em>formal</em> computer science background, which I have been mainly taken place after I left college.</p>
+
+<h3 id="courses">Courses</h3>
+
+<p>I have taken several courses related to computer science during my professional career, some of them to be able to fulfill my tasks more efficiently and some of other just for the pleause to know more about the topic.</p>
+
+<h4 id="learn-to-program">Learn to program</h4>
+
+<p>This was —and <a href="https://www.coursera.org/learn/learn-to-program/">still is</a>— a Coursera course I took when the platform was taking off in 2012 and I was curious about the online learning platform and which was more important I wanted to expand my knowledge about Python that I acquired in one of the ESRI courses. It was really rewarding and serve me to deeper understand how to program. You can know a little bit more about the course checking the <a href="https://www.coursera.org/learn/learn-to-program/">syllabus page</a> or in the <a href="/assets/docs/Certificate-Learn-to-Program.pdf">diploma</a> although I think they differ a little bit because back them in the syllabus was a section about <em>elementary data types (numeric
+types, strings, lists, tuples, dictionaries and files)</em>.</p>
+
+<h4 id="esri-courses">ESRI Courses</h4>
+
+<p>While I was working for the Fundación Ciudad de la Energía (<a href="http://ciuden.es/index.php/en/">CIUDEN</a>) in Spain, I was lucky enough to be able to organize for my co-workers and me a training program about GIS, <a href="https://www.esri.com/en-us/arcgis/about-arcgis/overview">ArcGIS</a> and their related technologies that we were using. We outsourced to the ArcGIS developer, <a href="https://www.esri.com">ESRI</a>. We ended up having more than 300 hours of training about the topic. At that time I was an avid user of ArcGIS although nowadays I tend to use more <a href="https://www.qgis.org/en/site/">QGIS</a> and <a href="https://www.r-project.org">R</a> —which both or them I build specific and optimized versions— for GIS matters. Anyhow, both apps, ArcGIS and QGIS, are similar and in the end they are usually <em>just</em> Python scripts for geoprocessing.</p>
+
+<p>This is a list of the most relevant courses I took during that training. The diplomas are in Spanish I don’t have a translation of them so I will try to outline the syllabus in one or two lines. By the way, most the training was taught partially in English, since most of the manuals and content, as well as the software at that moment, were only available in English.</p>
+
+<ul>
+  <li>
+<a href="/assets/docs/ArcGIS/Course-ArcGIS-Python.pdf">Geoprocessing in ArcGIS with Python</a>. 20 hours.
+    <ul>
+      <li>As I mention before GIS it’s usually carried out with Python scripts and ArcGIS is not an exception. ArcGIS has a Python module, called ArcPy, and this course is mainly about how to use the module and what you can do with it.</li>
+      <li>We learned about Python, how to create scripts with it, automate tasks, create maps, and process cartographic information and data.</li>
+    </ul>
+  </li>
+  <li>
+<a href="/assets/docs/ArcGIS/Course-ArcGIS-Server.pdf">ArcGIS Server</a>. 19 hours.
+    <ul>
+      <li>ArcGIS has a <em>mirror</em> software for the server side to host, serve and process cartography.</li>
+      <li>We learned how to install and manage the software and the geographic data hosted on it. We also learn to develop small web apps in the platform.</li>
+    </ul>
+  </li>
+  <li>
+<a href="/assets/docs/ArcGIS/Course-ArcGIS-Multiuser-Geodatabase.pdf">Introduction and administration of multiuser geodatabase</a>. 25 hours.
+    <ul>
+      <li>GIS it all about of data processing and management. In another words, data bases. A lot of the work is done at small scale in personal computers, but if you need to go further you need to set up a multiuser database in a server.</li>
+      <li>The course was mainly how to manage the database server software —MS SQL Server— and how to store, manage, work and server the data to the users for the ArcGIS purposes.</li>
+    </ul>
+  </li>
+  <li>
+<a href="/assets/docs/ArcGIS/Course-ArcGIS-Server-and-Oracle-DB.pdf">ArcGIS Server administration and Oracle DB configuration</a>. 35 hours.
+    <ul>
+      <li>ArcGIS server can play with different database vendors and one of them is Oracle.</li>
+      <li>In this course we went a little bit further in the administration of ArcGIS server in relation to geodabases and we learned how to use it with an Oracle database.</li>
+    </ul>
+  </li>
+  <li>
+<a href="/assets/docs/ArcGIS/Course-ArcGIS-API-ArcGIS-%26-AddIns.pdf">Programming with Add-ins and introduction to the ArcGIS Server APIs</a>. 30 hours.
+    <ul>
+      <li>ArcGIS has the possibility to add pieces of software or plugins —they call them add-ins— so you can add functionalities or even create apps for specific purposes using ArcGIS as a base. For instance, a company create an Add-in for ArcGIS to help to manage forest and create manage plans.</li>
+      <li>They taught us how to create those Add-ins using COM language and .NET framework. Other part of the course was how to create web apps on top of ArcGIS Server using its API.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="working-exprience-at-ciuden">Working exprience at CIUDEN</h3>
+
+<p>For almost four years, I was working for the Spanish government at Fundación Ciudad de la Energía (<a href="http://ciuden.es/index.php/en/">CIUDEN</a>) where I mainly carried out tasks related with project management, technology development, innovation and geographic information systems, among many others task, as a responsible of the Technology and Innovation area. You can read about my duties there in a more formal way in this <a href="/assets/docs/Certificate-Letter-CIUDEN.pdf">certificate letter</a> the managing director wrote when I left the organization.</p>
+
+<p>While I was in charge of the area, we developed applications related to computer science for the organization, as well as for several projects, internal and external, in which the foundation was involved. One of the most important was the development of the National Energy Museum, where we were involved in the future technological platform of the museum.</p>
+
+<h3 id="self-learner">Self-learner</h3>
+
+<p>I been always a good self-learner and it hasn’t been different in the area of programing and computer science. I’ve been lately learning how to program in R, Windows Batch and Unix Shell scripting, using books and resources form the web. I also manage a small network of servers composed by Raspberry Pis. They host applications to make them work as NAS, VPN server and clients, cloud storage, wireless audio streaming, ad blocker, internet speed logger and many others. I developed my, and my wife’s, websites using <a href="https://jekyllrb.com">Jekyll</a> platform implementing HTML, CSS, Liquid templating, Git, Continuous Integration and some Ruby and JavaScript. I help maintaining a <a href="https://github.com/OSGeo/homebrew-osgeo4mac">tap</a> specialized in GIS for the package manager Homebrew for macOS.</p>
+
+<h2 id="sample-of-work">Sample of work</h2>
+
+<p>I think one of the first examples I can provide about my proficiency in computer science is this website and <a href="https://luispuerto.net">my personal website</a>. I have developed both myself from a template and you can check the source code of both in GitHub, looking for the links at the footer of each of them or in this links:</p>
+
+<ul>
+  <li>luispuerto.net <a href="https://github.com/luispuerto/luispuerto.net">source code</a>.</li>
+  <li>impit.luispuerto.net <a href="https://github.com/luispuerto/impit.luispuerto.net">source code</a>.</li>
+</ul>
+
+<p>More related to data analysis I can provide an example of my R programming skills to analyze LiDAR data using the package <a href="https://github.com/Jean-Romain/lidR">LidR</a>. You ca visit my <a href="https://github.com/luispuerto/LiDARwR"><em>LiDARwR</em> repository</a> where you can find the code I used to analyze LiDAR data and to predict the amount of biomass using different types of LiDAR and biomass model information. I have not share the original data or the outcomes, since data was provided by a third party.</p>
+
+<p>On my <a href="https://github.com/luispuerto">GitHub profile</a> you can also find some other repositories related to small coding project, like small scripts I created to perform small tasks at home. Also in my blog you can find some post about <a href="https://luispuerto.net/archive/categories/technology/">technology</a>.</p>
+
+<h2 id="future">Future</h2>
+
+<p>As I stated in my motivation letter, one of the main drivers I have to increase my knowledge about computer science, programing and data science, and thus, apply to the IMPIT program, is that I see enormous synergies between the fields of computer sciences, natural and forestry sciences.</p>
+
+<p>We are heading for a moment in history when data is not going to be scarce anymore. It was in the past, and usually to do research, or any kind of analysis, there was always the difficult issue of how to gather the data necessary to answer the questions that were laying out before ourselves. There is a lot of stories in the scientific history and mythology about that quest for data scientists had to do. Mendel laboriously gathering genetic data in peas for years, Darwin traveling to the far site of the world to destile its breakthrough theory or the tenacious work that was to be done to get forest inventory data. Those practices are not totally gone. We still have to go far away to get some of the data. Scientist still need to <a href="https://salsa-antarctica.org">poke holes in the Antarctic ice sheet</a> to figure out what is down there and we still need to send people to camp in remote locations to gather data about forest, flora and fauna there.</p>
+
+<p>However, this is changing rapidly since the world filling up fast with sensors, cameras, detectors and an unimaginable collection of data providing devices, which are gathering for us most of the information we need. We are entering in a era of data abundance, where it is even stacking or cluttering. It is not the first time I hear from scientist and technicians that <em>we have too much data to process</em> or <em>we have a bunch of data here and we don’t really know what to do with it</em>. As with other issues, in the modern world we have pass in a matter or years from a problem of scarcity to a problem of abundance. And every year it is increasing, in an exponential way. There are more and smaller sensors, with better quality, more resolution and that are able to measure more variables.</p>
+
+<p>All that data means nothing if we cannot use, analyze and even squeeze it, until it tells the truth about the universe where we live in. <a href="https://www.ft.com/content/50bb4830-6a4c-11e6-ae5b-a7cc5dd5a28c"><em>Dataists</em></a> say that <em>everything is data and every living thing is just a complex data processing algorithm that exchange data with other living things</em>. I would not go that far because I still believe in the <a href="https://en.wikipedia.org/wiki/Free_will">free will</a> and serendipity, mainly because I really do not know if we are going to reach a point where we can analyze everything or even totally comprehend human minds. Nevertheless, it cannot be denied that statistics, data analysis techniques and data science has helped us enormously to understand our universe and improve our quality of life in the last couple of centuries. I know that much more is yet to come and I am really eager to learn. I want to be part of the algorithms and data analysis revolution, extracting the information required to find answers to questions that will help society to move forward.</p>
+
+<p>For that reason I want to participate in the IMPIT program.</p>
+
+        </div>
+        
+      </section>
+
+      <footer class="page__meta page__meta-footer">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<div class="search-searchbar"></div>
+    <div class="search-hits"></div>
+</div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/lpuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/lpuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/luispuerto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="https://luisspuerto.net/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2019 Luis Puerto |
+  
+  <a href="https://github.com/luispuerto/impit.luispuerto.net"><i class="fas fa-code" aria-hidden="true"></i> Source Code</a> | 
+  
+Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+// Instanciating InstantSearch.js with Algolia credentials
+const search = instantsearch({
+  appId: 'NSAWFR2G1K',
+  apiKey: 'b63bbd39b0bf76207cf9bebdb9c2b7dd',
+  indexName: 'luispuerto-net',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
+});
+
+const hitTemplate = function(hit) {
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.content.value;
+
+  return `
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline"><a href="https://luispuerto.net${url}">${title}</a></h2>
+        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+      </article>
+    </div>
+  `;
+}
+
+// Adding searchbar and results widgets
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '.search-searchbar',
+    poweredBy: true,
+    placeholder: 'Enter your search term...'
+  })
+);
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '.search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+// Starting the search
+search.start();
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1931812-3']);
+  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+    <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window()
+external_new_window();
+</script>
+    <style>
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.333%;
+	height: 0;
+    background: black;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    border: 0;
+}    
+</style>
+
+<script>
+function get_youtube_id(url) {
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    return (url.match(p)) ? RegExp.$1 : false;
+}
+function vimeo_embed(url,el) {
+    var id = false;
+    $.ajax({
+      url: 'https://vimeo.com/api/oembed.json?url='+url,
+      async: true,
+      success: function(response) {
+        if(response.video_id) {
+          id = response.video_id;
+          if(url.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+          if(url.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+          var theInnerHTML = '<div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+id+'/?byline=0&title=0&portrait=0';
+          if(autoplay==1) theInnerHTML += '&autoplay=1';
+          if(loop==1) theInnerHTML += '&loop=1';
+          theInnerHTML += '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'; 
+          el.innerHTML = theInnerHTML;
+        }
+      }
+    });
+}
+function video_embed() {
+    var p = document.getElementsByTagName('p');
+    for(var i = 0; i < p.length; i++) {
+        //check if this is an external url (that starts with https:// or http://
+        if (p[i].innerHTML.indexOf("http://") == 0 ||
+            p[i].innerHTML.indexOf("https://") == 0) {
+            var youtube_id = get_youtube_id(p[i].innerHTML);
+            if(youtube_id) {
+                if(p[i].innerHTML.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                if(p[i].innerHTML.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                var theInnerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + youtube_id + '?rel=0&showinfo=0';
+                if(autoplay==1) theInnerHTML += '&autoplay=1';
+                if(loop==1) theInnerHTML += '&loop=1&playlist='+youtube_id+'&version=3';
+                theInnerHTML += '" frameborder="0" allowfullscreen></iframe></div>';
+                p[i].innerHTML = theInnerHTML;
+            }
+            if(p[i].innerHTML.indexOf('vimeo.com') !== -1) {
+                //ask vimeo for the id and place the embed
+                vimeo_embed(p[i].innerHTML,p[i]);
+            }
+        }
+    }
+}
+video_embed();
+
+function mp3_embed() {
+    var p = document.getElementsByTagName('p');
+    for(var i = 0; i < p.length; i++) {
+        if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+            var str = p[i].innerHTML.split('?');
+            if(str.length == 1) str[1] = '';
+            var str1 = str[1];
+            str1 = str1.replace('&','').replace('&','');
+            str1 = str1.replace('autoplay=1','').replace('autoplay=0','');
+            str1 = str1.replace('loop=1','').replace('loop=0','');
+            str1 = str1.replace('controls=0','').replace('controls=1','');
+
+            if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+                if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
+                var newInnerHTML = '<audio';
+                if(autoplay==1) newInnerHTML += ' autoplay';
+                if(loop==1) newInnerHTML += ' loop';
+                if(controls==1) newInnerHTML += ' controls';
+                newInnerHTML += '><source src="'+str[0]+'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+                p[i].innerHTML = newInnerHTML;
+            }
+        }
+    }
+}
+mp3_embed();
+</script>
+  </body>
+</html>

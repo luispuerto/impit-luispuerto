@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
+  <link href="https://impit.luispuerto.net/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://impit.luispuerto.net/" rel="alternate" type="text/html" />
+  <updated>2019-02-11T16:56:03+00:00</updated>
+  <id>https://impit.luispuerto.net/</id>
+
+  
+    <title type="html">Luis Puerto’s Blog</title>
+  
+
+  
+    <subtitle>Forestry | Research | GIS | Remote Sensing</subtitle>
+  
+
+  
+    <author>
+        <name>Luis Puerto</name>
+      
+      
+    </author>
+  
+
+  
+  
+
+  
+
+  
+  
+</feed>
